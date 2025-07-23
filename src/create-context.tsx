@@ -1,5 +1,29 @@
 import * as React from 'react'
-
+/**
+ * Example:
+ *
+ * ```tsx
+ * const { Provider: AuthProvider, useContext: useAuth } = createContext(
+ *   ({ initialUser }: { initialUser: string }) => {
+ *     const [user, setUser] = React.useState(initialUser)
+ *     const [isLoading, setIsLoading] = React.useState(false)
+ *
+ *     async function login(username: string) {
+ *       setIsLoading(true)
+ *       await new Promise((r) => setTimeout(r, 1000))
+ *       setUser(username)
+ *       setIsLoading(false)
+ *     }
+ *
+ *     function logout() {
+ *       setUser('guest')
+ *     }
+ *
+ *     return { user, login, logout, isLoading }
+ *   }
+ * )
+ * ```
+ */
 export function createContext<
   TCtxProps extends object,
   TResult,

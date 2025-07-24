@@ -27,7 +27,7 @@ import * as React from 'react'
 export function createContext<
   TCtxProps extends object,
   TResult,
-  THookProps extends unknown[] = []
+  THookProps extends unknown[] = [],
 >(
   useProvider: (props: TCtxProps) => TResult,
   useContextHook: (...input: THookProps) => void = () => {}

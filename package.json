@@ -1,17 +1,35 @@
 {
   "name": "daily-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
+    "lint": "eslint .",
+    "fix": "eslint . --fix",
     "dev": "npmize dev",
     "build": "npmize build",
     "start": "run ./src/index.ts"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
   "devDependencies": {
+    "@eslint/compat": "^1.3.1",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.31.0",
+    "@reduxjs/toolkit": "^2.8.2",
     "@types/react": "^19.1.8",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-check-file": "^3.3.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.3",
     "npmize": "^1.1.11",
-    "typescript": "^5.8.3"
+    "prettier": "^3.6.2",
+    "prettier-plugin-organize-imports": "^4.2.0",
+    "react-redux": "^9.2.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.38.0"
   },
   "peerDependencies": {
     "react": "*"

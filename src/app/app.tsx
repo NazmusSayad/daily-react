@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { createContextEZ } from '../src/create-context-v2'
+import { createContextEZ } from '../create-context-v2'
 
 export const [AuthProvider, useAuth, ctx] = createContextEZ(() => {
   const [name, setName] = React.useState('John')

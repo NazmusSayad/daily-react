@@ -1,6 +1,6 @@
 import * as React from 'react'
 /**
- * Example:
+ * @example
  *
  * ```tsx
  * const { Provider: AuthProvider, useContext: useAuth } = createContext(
@@ -23,6 +23,8 @@ import * as React from 'react'
  *   }
  * )
  * ```
+ *
+ * @deprecated This is deprecated and will be removed in the next major version. Use createContextEZ instead.
  */
 export function createContext<
   TCtxProps extends object,
